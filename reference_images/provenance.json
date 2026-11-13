@@ -1,0 +1,30 @@
+{
+  "source": "Four initial-state images supplied and confirmed by the user for this reconstruction.",
+  "processing": "Files copied byte-for-byte; only repository filenames identify the camera views. No resizing, editing or recompression.",
+  "files": [
+    {
+      "file": "01_斜侧全景.png",
+      "view": "斜侧全景",
+      "supplied_filename": "Codex Image Nov 12, 2026, 09_06_09 PM.png",
+      "sha256": "45e047de04e31b69691510784a3f6b3dab19301724ae434affbfea16755844db"
+    },
+    {
+      "file": "02_正面近景.png",
+      "view": "正面近景",
+      "supplied_filename": "Codex Image Nov 12, 2026, 09_06_04 PM.png",
+      "sha256": "170e45dfd30b5a3438ff4394a048ee7e9081cfd10e71cf641785ea84581021b0"
+    },
+    {
+      "file": "03_俯视.png",
+      "view": "俯视",
+      "supplied_filename": "Codex Image Nov 12, 2026, 09_05_56 PM.png",
+      "sha256": "ce83a79c23678192150f33606feb9489c9ffe4a7874fb4d7c539662e933ac499"
+    },
+    {
+      "file": "04_背面.png",
+      "view": "背面",
+      "supplied_filename": "Codex Image Nov 12, 2026, 09_05_49 PM.png",
+      "sha256": "429376fe80abfbf9c0c5963ca2a54e56122bd44e7dbae9a7cc89ce5a584e20cd"
+    }
+  ]
+}

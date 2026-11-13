@@ -6,7 +6,7 @@
 
 ## 已保存的仿真结果
 
-本仓库包含完整运行代码、必要素材、三路视频、状态采样和核验报告。已保存的参考运行使用 RTX 5070 Laptop GPU，连续仿真 32 秒，完成两个往复周期后按残余质量判据提布。
+本仓库包含完整运行代码、四张初始参考图、必要素材、三路视频、状态采样和核验报告。已保存的参考运行使用 RTX 5070 Laptop GPU，连续仿真 32 秒，完成两个往复周期后按残余质量判据提布。
 
 - [全景原视频](output/final/simulation_overview.mp4)、[俯视视频](output/final/simulation_top.mp4)、[接触近景视频](output/final/simulation_closeup.mp4)
 - [结果与局限](output/final/RESULTS.md)、[数值验证数据](output/final/validation.json)、[状态采样](output/final/state_samples.npz)
@@ -18,7 +18,7 @@
 
 本次工作独立进行，不读取历史任务、历史记忆、原仿真的过程数据、物理参数或控制程序。使用的场景输入限于：
 
-- `01_斜侧全景.png`、`02_正面近景.png`、`03_俯视.png`、`04_背面.png` 四张用户在对话中提供的初始图片。整理仓库时原图的本地路径已不可用，未包含原图；来源说明见 [reference_images/README.md](reference_images/README.md)。运行时不依赖它们。
+- `01_斜侧全景.png`、`02_正面近景.png`、`03_俯视.png`、`04_背面.png` 四张用户提供并确认的初始图片，已按原始字节保存在 [reference_images/](reference_images/README.md)，包含视角预览和文件来源记录。运行时不依赖它们。
 - 用户指定的 [assets 目录](https://github.com/Chloe-Jinlei/genesis-dual-franka-cotton-wiping/tree/main/soy_cloth_scene/assets) 中的 `cotton_cloth.obj`、`cotton_weave.png`、`soy_puddle.obj`。
 - 用户对擦拭动作的文字描述及“用 GPU 跑”的要求。
 
@@ -198,7 +198,7 @@ Genesis 的 PBD/刚体耦合提供桌面法向接触；`genesis_extensions.py` �
 | `assets/` | 本次指定的素材及来源记录 |
 | `make_report.py` | 从保存的数据重新生成报告、校验清单和工程 ZIP |
 | `tuning_cloth.py` | 独立布料下垂诊断工具 |
-| `reference_images/README.md` | 四张输入图片的来源及当前缺失状态 |
+| `reference_images/` | 四张原始输入图片、视角预览和来源校验记录 |
 | `THIRD_PARTY.md` | 素材与机器人/仿真引擎的来源说明 |
 
 若要将本实现用于实验预测，需要另外提供或测量尺度与相机标定、干湿布的本构和摩擦、酱油流变、接触角、吸收曲线以及夹爪接触参数，并开展分辨率收敛和真实实验对照。当前实现提供可审查的重建假设、动力学过程和可量化记录，不替代这些验证。
