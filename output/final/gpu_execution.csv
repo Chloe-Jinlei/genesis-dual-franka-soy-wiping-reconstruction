@@ -1,0 +1,2 @@
+timestamp, name, utilization.gpu [%], memory.used [MiB]
+2026/11/12 19:14:03.480, NVIDIA GeForce RTX 5070 Laptop GPU, 86 %, 1205 MiB

@@ -1,0 +1,17 @@
+[
+  {
+    "file": "cotton_cloth.obj",
+    "url": "https://raw.githubusercontent.com/Chloe-Jinlei/genesis-dual-franka-cotton-wiping/main/soy_cloth_scene/assets/cotton_cloth.obj",
+    "sha256": "f8e40678dda4594537cc53e009b73518d93a3485918500019343ebf302dbf2fe"
+  },
+  {
+    "file": "cotton_weave.png",
+    "url": "https://raw.githubusercontent.com/Chloe-Jinlei/genesis-dual-franka-cotton-wiping/main/soy_cloth_scene/assets/cotton_weave.png",
+    "sha256": "b15eedbd1caea8852d8d69947c41e3cf62f50feaa03bf3ec7567df36632f8481"
+  },
+  {
+    "file": "soy_puddle.obj",
+    "url": "https://raw.githubusercontent.com/Chloe-Jinlei/genesis-dual-franka-cotton-wiping/main/soy_cloth_scene/assets/soy_puddle.obj",
+    "sha256": "4f5c48795ef2254686a59d3cf54bd4fe2d6c88fb7407acca11f1f7221d2a8b64"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "python": "3.12.15",
+  "platform": "Linux",
+  "genesis_repository": "https://github.com/Genesis-Embodied-AI/genesis-world",
+  "genesis_commit": "ffd119c30118ebb9745fc009349efb2112a8cb76",
+  "genesis_tracked_checkout_clean": true,
+  "torch_runtime": "2.14.0+cu130",
+  "device": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "note": "Observed environment of the included reference run; no virtual environment or credentials are included."
+}

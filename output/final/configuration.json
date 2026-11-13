@@ -1,0 +1,65 @@
+{
+  "description": "Independent reconstruction from four initial images, supplied assets, and task description.",
+  "genesis_version": "1.4.3",
+  "torch_version": "2.14.0+cu130",
+  "backend": "CUDA",
+  "device": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "dt_s": 0.01,
+  "substeps": 40,
+  "table_size_m": [
+    1.6,
+    1.0,
+    0.05
+  ],
+  "table_top_z_m": 0.75,
+  "cloth_dimensions_m": [
+    0.28,
+    0.18
+  ],
+  "cloth_particles": 3806,
+  "cloth_mesh_spacing_m": 0.004,
+  "cloth_contact_diameter_m": 0.0008,
+  "physical_cloth_thickness_assumption_m": 0.0008,
+  "stretch_compliance": 1e-08,
+  "bending_compliance": 10000.0,
+  "film": {
+    "density": 1150.0,
+    "dynamic_viscosity": 0.008,
+    "surface_tension": 0.05,
+    "cotton_areal_density": 0.22,
+    "capacity_ratio": 3.0,
+    "uptake_speed": 0.0003,
+    "contact_radius": 0.0004,
+    "contact_tolerance": 0.00025,
+    "shear_fraction": 0.5,
+    "wicking_diffusivity": 2e-05,
+    "grid_shape": [
+      80,
+      88
+    ],
+    "domain_size": [
+      0.62,
+      0.68
+    ],
+    "table_z": 0.75,
+    "puddle_center": [
+      0.0,
+      0.04
+    ],
+    "puddle_scale": 0.5,
+    "coupling": "film receives cloth position/velocity; no fluid reaction force returned"
+  },
+  "grasp_model": "Ideal no-slip attachment to actual hand links after closure; one-way constraint.",
+  "limitations": [
+    "Photographs do not identify unique geometry, camera calibration, material, or robot states.",
+    "Thin-film and capacity-limited absorption are reduced models, not native Genesis fluid or calibrated cotton porosity.",
+    "Ideal grasps do not return exact constraint tension; no frictional grasp/slip validation.",
+    "Table cloth friction is a weight-supported split Coulomb projection.",
+    "Fluid pressure/shear reaction on cloth is omitted; textile wicking is a conservative saturation diffusion approximation."
+  ],
+  "sources": [
+    "Four images supplied in this task",
+    "assets/provenance.json",
+    "Installed Genesis 1.4.3 library and standard Panda asset"
+  ]
+}
